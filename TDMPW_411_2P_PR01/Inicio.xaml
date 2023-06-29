@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_411_2P_PR01.Inicio"
+            xmlns:local="clr-namespace:TDMPW_411_2P_PR01" 
+            BarBackgroundColor="DarkRed">
+    <ContentPage Title="🏠︎" BackgroundColor="IndianRed">
+        <Grid
+            RowDefinitions="1*,.1*"
+            ColumnDefinitions="1*">
+            <Frame BorderColor="Green" BackgroundColor="Green" Margin="50" 
+                   Grid.Column="0"
+                   Grid.Row="0">
+                <Frame BackgroundColor="IndianRed" BorderColor="Green">
+                    <Grid
+                    RowDefinitions=".4*,.2*,.4*"
+                    ColumnDefinitions=".3*,.3*,.3*">
+                        <Frame Margin="10"
+                            Grid.Column="1"
+                            Grid.Row="0"
+                            CornerRadius="50"
+                            IsClippedToBounds="True"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            BorderColor="IndianRed">
+                            <Image Source="https://i.ytimg.com/vi/CKU4Yxh1HHM/maxresdefault.jpg"
+                                   Aspect="AspectFill"
+                                   MaximumHeightRequest="200"
+                                   MaximumWidthRequest="400"
+                                   Margin="-20"
+                            ></Image>
+                        </Frame>
+                        <Frame 
+                       
+                   CornerRadius="40"
+                   Padding="20"
+                   Margin="15"
+                            BorderColor="IndianRed"
+                               Grid.ColumnSpan="3"
+                               Grid.Row="1"
+                               Grid.RowSpan="2"
+                            BackgroundColor="DarkRed">
+                            <StackLayout>
+                                <Label Text="La esperanza de navidad"
+                           FontSize="34"
+                           FontAttributes="Bold"></Label>
+                                <BoxView Color="Green"
+                             HeightRequest="5"
+                             HorizontalOptions="Fill"></BoxView>
+                                <Label Text="Despues de los hechos anteriores &#10;
+                                        •Los demonios consiguen acabar con la navidad &#10;
+                                        •Krampus es invocado &#10;
+                                        •Santa claus se sacrifica por Mokey &#10;
+                                        •Mokey escapa con el reloj magico de Santa claus &#10; &#10; Mokey con el reloj magico de Santa claus buscara reunir a distintas versiones de el mismo para darle frente al ejercito&#10;de demonios de Krampus para recuperar y salvar la navidad."
+                           FontSize="20"
+                                       FontAutoScalingEnabled="True"
+                                       ></Label>
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                </Frame>
+            </Frame>
+        </Grid>
+    </ContentPage>
+    <local:Personaje1 Title="Mokey"></local:Personaje1>
+    <local:Personaje2 Title="Krampus"></local:Personaje2>
+</TabbedPage>

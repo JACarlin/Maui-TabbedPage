@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_411_2P_PR01.MainPage"
+            xmlns:local="clr-namespace:TDMPW_411_2P_PR01" 
+            BarBackgroundColor="DarkRed">
+    <ContentPage Title="🏠︎" BackgroundColor="IndianRed">
+        <VerticalStackLayout>
+            <Frame BorderColor="Green" BackgroundColor="Green" Margin="50" HeightRequest="900">
+                <Frame BackgroundColor="IndianRed" BorderColor="Green">
+                <Grid
+                    RowDefinitions=".4*,.2*,.4*"
+                    ColumnDefinitions=".3*,.3*,.3*">
+                        <Frame Margin="10"
+                               Grid.Column="1"
+                               Grid.Row="0"
+                               
+                   BorderColor="Blue"
+                   CornerRadius="50"
+                   HeightRequest="200"
+                   WidthRequest="200"
+                   IsClippedToBounds="False"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   >
+                            <Image Source="https://i.ytimg.com/vi/CKU4Yxh1HHM/maxresdefault.jpg"
+                       Aspect="AspectFill"
+                       HeightRequest="100"
+                       WidthRequest="200"
+                       Margin="-80"
+                       />
+
+                        </Frame>
+                    </Grid>
+                </Frame>
+            </Frame>
+        </VerticalStackLayout>
+    </ContentPage>
+    <local:Personaje1 Title="Personaje 1"></local:Personaje1>
+    <local:Personaje2 Title="Personaje 2"></local:Personaje2>
+</TabbedPage>

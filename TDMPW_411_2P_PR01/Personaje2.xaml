@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_411_2P_PR01.Personaje2"
+             Title="Personaje2"
+             BackgroundColor="IndianRed">
+    <Grid
+            RowDefinitions="1*,.1*"
+            ColumnDefinitions="1*">
+        <Frame BorderColor="Green" BackgroundColor="Green" Margin="50" 
+                   Grid.Column="0"
+                   Grid.Row="0">
+            <Frame BackgroundColor="IndianRed" BorderColor="Green">
+                <Grid
+                    RowDefinitions=".4*,.2*,.3*,.1*"
+                    ColumnDefinitions=".3*,.3*,.3*">
+                    <Frame Margin="10"
+                            Grid.Column="2"
+                            Grid.Row="0"
+                            CornerRadius="200"
+                            IsClippedToBounds="True"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            BorderColor="IndianRed">
+                        <Image Source="https://static.wikia.nocookie.net/mokeys-show/images/8/8f/Krampus.png/revision/latest?cb=20171223172802"
+                                   Aspect="AspectFill"
+                                   MaximumHeightRequest="200"
+                                   MaximumWidthRequest="300"
+                                   Margin="-20"
+                            ></Image>
+                    </Frame>
+                    <Frame 
+                       
+                   CornerRadius="40"
+                   Padding="20"
+                   Margin="15"
+                            BorderColor="IndianRed"
+                               Grid.Column="0"
+                               Grid.Row="0"
+                               Grid.ColumnSpan="2"
+                            BackgroundColor="DarkRed">
+                        <StackLayout>
+                            <Label Text="Krampus"
+                           FontSize="124"
+                           FontAttributes="Bold"></Label>
+                            <BoxView Color="Green"
+                             HeightRequest="20"
+                             HorizontalOptions="Fill"></BoxView>
+                        </StackLayout>
+                    </Frame>
+                    <Frame 
+                       
+                   CornerRadius="40"
+                   Padding="20"
+                   Margin="15"
+                        
+                            BorderColor="IndianRed"
+                               Grid.ColumnSpan="3"
+                               Grid.Row="1"
+                               Grid.RowSpan="2"
+                            BackgroundColor="DarkRed">
+                        
+                            <Label Text=" Krampus es el principal antagonista de la saga de Krima de The Mokey Show. El es un demonio con apariencia de cabra, el cual fue invocado por los Krismas, Demonios pequeños con odio a la navidad, y luego de ser invocado busca eliminar la navidad a toda costa junto a sus secuaces, sin embargo Mokey se interpone en sus planes."
+                           FontSize="15"
+                           FontAttributes="Bold"
+                                   FontAutoScalingEnabled="True"></Label>
+
+                        
+                    </Frame>
+                    <Grid Grid.Row="3"
+              ColumnDefinitions=".25*,.25*,.5*">
+                        <Button Grid.Column="0" Text="👍" BackgroundColor="DarkRed" Margin="10" Clicked="Button_Clicked"></Button>
+                        <Button Grid.Column="1" Text="👎" BackgroundColor="DarkRed" Margin="10" Clicked="Button_Clicked"></Button>
+                        <Label x:Name="respuesta2" Grid.Column="2" Text="Te gusto/ No te gusto el personaje" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+                    </Grid>
+                </Grid>
+            </Frame>
+        </Frame>
+    </Grid>
+</ContentPage>

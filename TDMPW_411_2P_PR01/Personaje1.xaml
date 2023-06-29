@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_411_2P_PR01.Personaje1"
+             Title="Personaje1"
+             BackgroundColor="IndianRed"
+             >
+    <Grid
+            RowDefinitions="1*,.1*"
+            ColumnDefinitions="1*">
+        <Frame BorderColor="Green" BackgroundColor="Green" Margin="50" 
+                   Grid.Column="0"
+                   Grid.Row="0">
+            <Frame BackgroundColor="IndianRed" BorderColor="Green">
+                <Grid
+                    RowDefinitions=".4*,.2*,.3*,.1*"
+                    ColumnDefinitions=".3*,.3*,.3*">
+                    <Frame Margin="10"
+                            Grid.Column="0"
+                            Grid.Row="0"
+                            CornerRadius="900"
+                            IsClippedToBounds="True"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            BorderColor="IndianRed">
+                        <Image Source="https://pbs.twimg.com/media/EqRjnxoXEAQiZvN.png"
+                                   Aspect="AspectFill"
+                                   MaximumHeightRequest="200"
+                                   MaximumWidthRequest="300"
+                                   Margin="-20"
+                            ></Image>
+                    </Frame>
+                    <Frame 
+                       
+                   CornerRadius="40"
+                   Padding="20"
+                   Margin="15"
+                            BorderColor="IndianRed"
+                               Grid.Column="1"
+                               Grid.Row="0"
+                               Grid.ColumnSpan="2"
+                            BackgroundColor="DarkRed">
+                        <StackLayout>
+                            <Label Text="Mokey"
+                           FontSize="124"
+                           FontAttributes="Bold"></Label>
+                            <BoxView Color="Green"
+                             HeightRequest="20"
+                             HorizontalOptions="Fill"></BoxView>
+                        </StackLayout>
+                    </Frame>
+                    <Frame 
+                       
+                   CornerRadius="40"
+                   Padding="20"
+                   Margin="15"
+                            BorderColor="IndianRed"
+                               Grid.ColumnSpan="3"
+                               Grid.Row="1"
+                               Grid.RowSpan="2"
+                            BackgroundColor="DarkRed">
+                        <Label Text=" A Mokey le gusta mucho celebrar la Navidad, sin embargo cualquier cosa siempre se interpone en la celebración.&#10;&#10; En el Día de San Valentín , se da cuenta de que rompió con Momi. &#10;&#10;
+
+Ha aparecido en todos los episodios de Mokey's Show .&#10;&#10;
+
+Mokey es muy cruel con otros personajes, incluso si no han hecho nada para justificar este comportamiento. &#10;&#10;
+
+Es capaz de matar a 24 personas en un solo nanosegundo. &#10;&#10;
+
+En Navidad mokey llega a un estado de frenesi donde es casi imposible de matar, sin embargo, se sabe que Krimas en &#10;  realidad puede matar a Mokey (s), como se vio visiblemente en la esperanza de navidad."
+                           FontSize="15"
+                           FontAttributes="Bold"></Label>
+                    </Frame>
+                    <Grid Grid.Row="3"
+              ColumnDefinitions=".25*,.25*,.5*">
+                        <Button Grid.Column="0" Text="👍" BackgroundColor="DarkRed" Margin="10" Clicked="Button_Clicked"></Button>
+                        <Button Grid.Column="1" Text="👎" BackgroundColor="DarkRed" Margin="10" Clicked="Button_Clicked"></Button>
+                        <Label x:Name="respuesta" Grid.Column="2" Text="Te gusto/ No te gusto el personaje" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+                    </Grid>
+                </Grid>
+            </Frame>
+            
+        </Frame>
+       
+        
+    </Grid>
+</ContentPage>
